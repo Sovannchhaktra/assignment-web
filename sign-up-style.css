@@ -1,0 +1,17 @@
+@import url("color.css");
+
+.frm { 
+    width: 70%;
+    background-color: red;
+    display: flex;
+    margin-top: 2.6rem;
+    margin-left: 10rem;
+}
+.frm .img {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(223, 223, 223);
+}
+.frm .img img {
+    width: 100%;
+}
