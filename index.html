@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <!-- Link CSS -->  
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sign-up-style.css">
+
     <!-- Link Bootstrap CSS -->  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">  
     <!-- Link Bootstrap JS -->
@@ -78,7 +80,7 @@
                         <i class="fa-regular fa-heart" style="cursor: pointer;"></i>
                     </div>
                     <div>
-                        <i class="fa-solid fa-cart-shopping" style="cursor: pointer;"></i>
+                        <i onclick="Cart()" class="fa-solid fa-cart-shopping" style="cursor: pointer;"></i>
                     </div>
                 </div>
             </div>  
@@ -899,7 +901,137 @@
                   <div class="about">About us content...</div> 
                 </div>
                 <div class="container-fluid">
-                  <div class="signup">Sign up content...</div>  
+                  <div class="signup">
+                    <div class="frm">
+                      <div class="img">
+                        <img src="assets/img/p1.jpg" alt="">
+                      </div>
+                      <div class="frm-group">
+                        <div class="title">
+                          <h2>Create an account</h2>
+                          <p>Enter you details below</p>
+                        </div>
+                        <div class="frm-control">
+                          <input type="text" placeholder="Name">
+                        </div>
+                        <div class="frm-control">
+                          <input type="text" placeholder="Email or Phone Number">
+                        </div>
+                        <div class="frm-control">
+                          <input type="text" placeholder="Password">
+                        </div>
+                        <div class="frm-btn btn-1">
+                          <input type="button" value="Create Account">
+                        </div>
+                        <div class="frm-btn btn-2">
+                          <img src="assets/icon/Icon-Google.png" alt="">
+                          <input type="button" value="Sign up with Google">
+                        </div>
+                        <p class="on-login">Already hare account? <u onclick="LoginForm()" style="color: blue;cursor: pointer;">Login</u></p>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+                <div class="container-fluid">
+                  <div class="login">
+                    <div class="frm">
+                      <div class="img">
+                        <img src="assets/img/p1.jpg" alt="">
+                      </div>
+                      <div class="frm-group">
+                        <div class="title">
+                          <h2>Login</h2>
+                          <p>Enter you details below</p>
+                        </div>
+                        <div class="frm-control">
+                          <input type="text" placeholder="Email or Phone Number">
+                        </div>
+                        <div class="frm-control">
+                          <input type="text" placeholder="Password">
+                        </div>
+                        <div class="frm-btn btn-3">
+                          <input type="button" value="Sign In">
+                        </div>
+                        <p class="on-login">Not a menber? <u onclick="Signup()" style="color: blue;cursor: pointer;">Signup now</u></p>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="container-fluid">
+                  <div class="cart">
+                    <div class="container1">
+                      <nav class="breadcrumb">
+                        <a href="#">Home</a> / <span>Cart</span>
+                      </nav>
+                  
+                      <table class="cart-table">
+                        <thead>
+                          <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="product-info">
+                                <img src="https://m.media-amazon.com/images/I/718EMzB0KwL._AC_SL1500_.jpg" alt="LCD Monitor" class="product-image">
+                                <span>LCD Monitor</span>
+                              </div>
+                            </td>
+                            <td>$650</td>
+                            <td>
+                              <select>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                              </select>
+                            </td>
+                            <td>$650</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="product-info">
+                                <img src="data:image/jpeg;base64,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" alt="Gamepad" class="product-image">
+                                <span>H1 Gamepad</span>
+                              </div>
+                            </td>
+                            <td>$550</td>
+                            <td>
+                              <select>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                              </select>
+                            </td>
+                            <td>$1100</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  
+                      <div class="actions">
+                        <button class="return-btn">Return To Shop</button>
+                        <button class="update-btn">Update Cart</button>
+                      </div>
+                  
+                      <div class="coupon-checkout">
+                        <div class="coupon">
+                          <input type="text" placeholder="Coupon Code">
+                          <button>Apply Coupon</button>
+                        </div>
+                  
+                        <div class="cart-total">
+                          <h3>Cart Total</h3>
+                          <p>Subtotal: $1750</p>
+                          <p>Shipping: Free</p>
+                          <p>Total: $1750</p>
+                          <button class="checkout-btn">Proceed to Checkout</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>  
         </div>
