@@ -76,7 +76,7 @@ categoryItems.forEach((item) => {
 });
 
 const toggleSection = (sectionToShow) => {
-const sections = ["home", "contact", "about", "signup", "login"];
+const sections = ["home", "contact", "about", "signup", "login", "cart"];
   sections.forEach((section) => {
     document.querySelector(`.${section}`).style.display =
       section === sectionToShow ? "block" : "none";
@@ -90,3 +90,4 @@ const Contact = () => toggleSection("contact");
 const About = () => toggleSection("about");
 const Signup = () => toggleSection("signup");
 const LoginForm = () => toggleSection("login");
+const Cart = () => toggleSection("cart");
