@@ -80,33 +80,9 @@
                         <i class="fa-regular fa-heart" style="cursor: pointer;"></i>
                     </div>
                     <div>
-                        <i onclick="Cart()" class="fa-solid fa-cart-shopping" style="cursor: pointer;"></i>
-=========
-                    <div style="height: 20px; width: 20px;">
-                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,10" style="background-color:white; border: none;">
-                          <i class="fa-solid fa-cart-shopping" style="cursor: pointer; color: black;"></i>
-                        </button>
->>>>>>>>> Temporary merge branch 2
+                      <i onclick="Cart()" class="fa-solid fa-cart-shopping" style="cursor: pointer;"></i>
                     </div>
-                    <div class="dropdown" style="height: 20px; width: 20px;">
-                      <div class="d-flex" style="background-color: white; cursor: pointer;">
-                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,10" style="background-color:white; border: none;">
-                          <i class="fa-solid fa-user" style="color: black;"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">
-                            <li class="nav-item">  
-                              <p class="" onclick="Account()" data-bs-toggle="tab" data-bs-target="#acount">Manage My Account</p>  
-                            </li>
-                          </a></li>
-                          <li><a class="dropdown-item" href="#">My Order</a></li>
-                          <li><a class="dropdown-item" href="#">My Cancellations</a></li>
-                          <li><a class="dropdown-item" href="#">My Reviews</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                 </div>
+                  </div>
                 </div>
             </div>  
             </div>
@@ -1056,132 +1032,6 @@
                         </div>
                       </div>
                     </div>
-=========
-                  <div class="account">
-                    <div style="width: 100%; height: 75px; display: flex;">
-                      <div style="width: 70%; height: 100%;">
-                        <ul class="nav nav-tabs border border-0">
-                          <li class="nav-item">  
-                            <p class="" onclick="Home()" data-bs-toggle="tab" data-bs-target="#home">Home</p>  
-                          </li>
-                          <li class="nav-item">  
-                            <p class="active" onclick="Account()" data-bs-toggle="tab" data-bs-target="#account">My Account</p>  
-                          </li>
-                        </ul>
-                      </div>
-                      <div style="width: 30%; height: 100%;">
-                        <p>Welcome </p>
-                      </div>
-                    </div>
-                    <div style="width: 100%; height: 85vh; display: flex; padding: 70px;">
-                      <!-- <div style="background-color: aqua; width: 30%; height: 60hv;">1</div>
-                      <div style="background-color: gray; width: 70%; height: 60hv;">2</div> -->
-                      <style>
-                        .sidebar {
-                            width: 200px;
-                            padding: 20px;
-                            /* background-color: #f4f4f4; */
-                        }
-                        .sidebar a {
-                            display: block;
-                            padding: 10px;
-                            text-decoration: none;
-                            color: #333;
-                        }
-                        .sidebar a:hover {
-                            background-color: #ddd;
-                        }
-                        .sidebar a.active {
-                            color: red;
-                        }
-                        .content {
-                            flex-grow: 1;
-                            padding: 20px;
-                        }
-                        .content h2 {
-                            color: red;
-                        }
-                        .form-group {
-                            margin-bottom: 15px;
-                        }
-                        .form-group label {
-                            display: block;
-                            margin-bottom: 5px;
-                        }
-                        .form-group input {
-                            width: 100%;
-                            padding: 8px;
-                            box-sizing: border-box;
-                        }
-                        .buttons {
-                            display: flex;
-                            justify-content: flex-end;
-                        }
-                        .buttons button {
-                            padding: 10px 20px;
-                            margin-left: 10px;
-                            border: none;
-                            cursor: pointer;
-                        }
-                        .buttons .cancel {
-                            background-color: #ccc;
-                        }
-                        .buttons .save {
-                            background-color: red;
-                            color: white;
-                        }
-                      </style>
-                      <div class="sidebar" style="font-family: Arial, sans-serif; width: 30%;">
-                        <h4>Manage My Account</h4>
-                        <a href="#" class="active">My Profile</a>
-                        <a href="#">Address Book</a>
-                        <a href="#">My Payment Options</a>
-                        <h4>My Orders</h4>
-                        <a href="#">My Returns</a>
-                        <a href="#">My Cancellations</a>
-                        <h4>My Wishlist</h4>
-                      </div>
-                      <div class="" style="font-family: Arial, sans-serif; width: 70%; border: 3px; border-color: #333; background-color: rgb(216, 222, 226); padding: 80px; border-radius: 10px;">
-                        <h4 style="color: red;">Edit Your Profile</h4>
-                        <form>
-                              <div class="form-group d-flex justify-content-between">
-                                  <label for="first-name" class="mt-2">First Name</label>
-                                  <input type="text" id="first-name" name="first-name" value="Group" style="width: 400px;">
-
-                                  <label for="last-name" class="mt-2">Last Name</label>
-                                  <input type="text" id="last-name" name="last-name" value="Web" style="width: 400px;">
-                              </div>
-                              
-                              <div class="form-group d-flex  justify-content-between">
-                                  <label for="email" class="mt-2">Email</label>
-                                  <input type="email" class="ms-4" id="email" name="email" value="assignment@gmail.com" style="width: 400px;">
-
-                                  <label for="address" class="mt-2">Address</label>
-                                  <input type="text" id="address" name="address" value="Cambodia, Rupp, Team S'mos E9" style="width: 400px;">
-                              </div>
-                            
-                              <h3>Password Changes</h3>
-                              <div class="form-group">
-                                  <label for="current-password">Current Password</label>
-                                  <input type="password" id="current-password" name="current-password">
-                              </div>
-                              <div class="form-group">
-                                  <label for="new-password">New Password</label>
-                                  <input type="password" id="new-password" name="new-password">
-                              </div>
-                              <div class="form-group">
-                                  <label for="confirm-password">Confirm New Password</label>
-                                  <input type="password" id="confirm-password" name="confirm-password">
-                              </div>
-                              <div class="buttons">
-                                  <button type="button" class="cancel">Cancel</button>
-                                  <button type="submit" class="save">Save Changes</button>
-                              </div>
-                        </form>
-                      </div>
-                    </div><!--hello------------------------------------------------------------ -->
->>>>>>>>> Temporary merge branch 2
-                  </div>
                 </div>
             </div>  
         </div>

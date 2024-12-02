@@ -91,4 +91,3 @@ const About = () => toggleSection("about");
 const Signup = () => toggleSection("signup");
 const LoginForm = () => toggleSection("login");
 const Cart = () => toggleSection("cart");
-const Account = () => toggleSection("account");
