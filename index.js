@@ -27,14 +27,14 @@ getClock();
 setInterval(getClock, 1000);
 
 const obj = [
-  { name: "Tony", price: 10.99, img: "image/1.jpg" },
-  { name: "Lucky", price: 12.99, img: "image/1.jpg" },
-  { name: "Predo", price: 11.99, img: "image/1.jpg" },
-  { name: "Koko", price: 8.99, img: "image/1.jpg" },
-  { name: "A Lok", price: 15.99, img: "image/1.jpg" },
-  { name: "July", price: 17.99, img: "image/1.jpg" },
-  { name: "A Kom Sot", price: 17.99, img: "image/1.jpg" },
-  { name: "Momo", price: 12.99, img: "image/1.jpg" },
+  { name: "Tony", price: 10.99, img: "flash-sale/flash-sale1.avif" },
+  { name: "Lucky", price: 12.99, img: "flash-sale/flash-sale2.avif" },
+  { name: "Predo", price: 11.99, img: "flash-sale/flash-sale3.avif" },
+  { name: "Koko", price: 8.99, img: "flash-sale/flash-sale4.avif" },
+  { name: "A Lok", price: 15.99, img: "flash-sale/flash-sale5.avif" },
+  { name: "July", price: 17.99, img: "flash-sale/flash-sale6.avif" },
+  { name: "A Kom Sot", price: 17.99, img: "flash-sale/flash-sale7.avif" },
+  { name: "Momo", price: 12.99, img: "flash-sale/flash-sale8.avif" },
 ];
 
 let index = 0;
