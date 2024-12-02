@@ -73,7 +73,7 @@
                 </nav>
                 <div class="d-flex mt-2 gap-3">
                     <div class="search">
-                        <input type="text" placeholder="What are you looking for?">
+                        <input type="text" class="form-control p-1 w-100" placeholder="Searsh...">
                         <i class="fa-solid fa-magnifying-glass text-dark" style="cursor: pointer;"></i>
                     </div>
                     <div class="heart1">
@@ -81,6 +81,24 @@
                     </div>
                     <div>
                       <i onclick="Cart()" class="fa-solid fa-cart-shopping" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="dropdown" style="height: 20px; width: 20px;">
+                      <div class="d-flex" style="background-color: white; cursor: pointer;">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,10" style="background-color:white; border: none;">
+                          <i class="fa-solid fa-user" style="color: black;"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">
+                            <li class="nav-item">  
+                              <p class="" onclick="Account()" data-bs-toggle="tab" data-bs-target="#acount">Manage My Account</p>  
+                            </li>
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">My Order</a></li>
+                          <li><a class="dropdown-item" href="#">My Cancellations</a></li>
+                          <li><a class="dropdown-item" href="#">My Reviews</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1029,7 +1047,77 @@
                       </div>
                     </div>
                 </div>
-            </div>  
+            
+                <!-- Step Account -->
+                <div class="container-fluid">
+                  <div class="account">
+                    <div style="width: 80%; margin: auto; display: flex;">
+                      <div style="width: 70%; height: 100%;">
+                        <ul class="nav nav-tabs border border-0">
+                          <li class="nav-item">  
+                            <p class="" onclick="Home()" data-bs-toggle="tab" data-bs-target="#home">Home</p>  
+                          </li>
+                          <li class="nav-item">  
+                            <p class="active" onclick="Account()" data-bs-toggle="tab" data-bs-target="#account">My Account</p>  
+                          </li>
+                        </ul>
+                      </div>  
+                    </div>
+                    <div style="width: 80%; margin: auto; height: fit-content; display: flex; padding: 20px 0;">
+                      <div class="sidebar" style="font-family: Arial, sans-serif; width: 30%;">
+                        <h4>Manage My Account</h4>
+                        <a href="#" class="active">My Profile</a>
+                        <a href="#">Address Book</a>
+                        <a href="#">My Payment Options</a>
+                        <h4>My Orders</h4>
+                        <a href="#">My Returns</a>
+                        <a href="#">My Cancellations</a>
+                        <h4>My Wishlist</h4>
+                      </div>
+                      <div class="" style="font-family: Arial, sans-serif; width: 70%; border: 3px; border-color: #333; background-color: rgb(216, 222, 226); padding: 50px; border-radius: 10px;">
+                        <h4 style="color: red;">Edit Your Profile</h4>
+                        <form>
+                              <div class="form-group d-flex justify-content-between">
+                                  <label for="first-name" class="mt-2">First Name</label>
+                                  <input type="text" id="first-name" name="first-name" class="form-control" value="Group" style="width: 80%;">
+                              </div>
+                              <div class="form-group d-flex justify-content-between">
+                                <label for="last-name" class="mt-2">Last Name</label>
+                                <input type="text" id="last-name" class="form-control" name="last-name" value="Web" style="width: 80%;">
+                            </div>
+                              
+                              <div class="form-group d-flex  justify-content-between">
+                                  <label for="email" class="mt-2">Email</label>
+                                  <input type="email" class="ms-4 form-control" id="email" name="email" value="assignment@gmail.com" style="width: 80%;">
+                              </div>
+                              <div class="form-group d-flex  justify-content-between">
+                                <label for="address" class="mt-2">Address</label>
+                                <input type="text" id="address" class="form-control" name="address" value="Cambodia, Rupp, Team S'mos E9" style="width: 80%;">
+                            </div>
+                            
+                              <h3>Password Changes</h3>
+                              <div class="form-group">
+                                  <label for="current-password">Current Password</label>
+                                  <input type="password" class="form-control" id="current-password" name="current-password">
+                              </div>
+                              <div class="form-group">
+                                  <label for="new-password">New Password</label>
+                                  <input type="password" class="form-control" id="new-password" name="new-password">
+                              </div>
+                              <div class="form-group">
+                                  <label for="confirm-password">Confirm New Password</label>
+                                  <input type="password" class="form-control" id="confirm-password" name="confirm-password">
+                              </div>
+                              <div class="buttons">
+                                  <button type="button" class="cancel">Cancel</button>
+                                  <button type="submit" class="save">Save Changes</button>
+                              </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
         </div>
     </div> 
     <footer>
