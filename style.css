@@ -14,11 +14,12 @@
   transition: all 0.4s ease-out;
 }
 .pro-name{
-  display: -webkit-box;       /* Create a flexible box */
-  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
-  overflow: hidden;           /* Hide overflowing content */
-  text-overflow: ellipsis;    /* Add ellipsis for overflowing text */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   -webkit-line-clamp: 2; 
+
 }
 
 .container-fluid {
